@@ -8,7 +8,11 @@
 (아래 사용법을 봐도 잘 안되면 ppt도 참고)
 
 ### 1. git clone
-우선 나의 파일들 git clone으로 다운로드하자
+```bash
+git init
+git clone https://github.com/joonk2/newspaper-summary-with-animal-crossing.git
+
+```
 
 ### 2. aihub에서 아래링크의 파일을 우선 다운로드 받자
 https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=97
