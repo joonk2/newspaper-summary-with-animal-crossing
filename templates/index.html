@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <!-- main.js 파일 포함 -->
+    <script src="{{ url_for('static', filename='main.js') }}" defer></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        textarea {
+            margin: 10px 0;
+            width: 100%;
+            max-width: 500px;
+            resize: vertical;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        #summaryContainer {
+            display: none; /* 요약본과 오디오 플레이어를 처음에는 숨깁니다 */
+            position: relative;
+            margin-top: 20px;
+            max-width: 600px;
+        }
+        #summaryContainer img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        #summaryText {
+            position: absolute;
+            top: 50%; /* 이미지를 기준으로 텍스트 위치 조정 */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%; /* 텍스트 박스 너비 설정 */
+            height: 60%; /* 텍스트 박스 높이 설정 */
+            text-align: center;
+            font-size: 16px; /* 글자 크기 */
+            line-height: 1.4;
+            color: black; /* 텍스트 색상 */
+            overflow-y: auto; /* 세로 스크롤바 추가 */
+            overflow-x: hidden; /* 가로 스크롤바는 숨김 */
+        }
+        #audioPlayer {
+            display: none;
+            margin-top: 20px;
+        }
+        #timer-box {
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(10, 10, 10);
+            margin-top: 10px;
+            display: none;
+        }
+        #bird-gif {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="{{ url_for('static', filename='images/racoon.png') }}" alt="Racoon" style="max-width: 600px; height: auto;">
+        </header>
+        <h1>어서와 구리 ʕ ·ᴥ·ʔ</h1>
+        <form id="textForm">
+            <textarea name="text" rows="4" cols="50" placeholder="글을 입력해주세요"></textarea><br>
+            <input type="submit" value="클릭 시 요약본이 출력 및 재생됩니다">
+        </form>
+
+        <!-- 요약된 텍스트를 표시할 위치 -->
+        <div id="summaryContainer">
+            <img src="{{ url_for('static', filename='images/talk.png') }}" alt="Talk">
+            <div id="summaryText"></div>
+        </div>
+
+        <!-- 오디오 플레이어 -->
+        <audio id="audioPlayer" controls></audio>
+
+        <!-- 타이머와 GIF -->
+        <div id="timer-box">조금만 기다리숑 약 <span id="timer">0</span> 초?</div>
+        <img id="bird-gif" src="{{ url_for('static', filename='images/penguin.gif') }}" alt="Bird GIF">
+    </div>
+</body>
+</html>
