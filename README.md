@@ -4,8 +4,13 @@
 ![image](https://github.com/user-attachments/assets/8dde5764-820c-4fe3-a13e-4430fca8a7c5)
 <br><br>
 
-# 사용법(최소 colab pro 결제 필수)
-(아래 사용법을 봐도 잘 안되면 ppt도 참고)
+# 사용법
+(아래 사용법 1 ~ 4 를 봐도 잘 안되면 ppt도 참고)
+
+우선 시작 전에 본인의 노트북이 완전 좋은 gpu의 게임용이라면 코렙결제 필요X, <br>
+그게 아니라면 **`최소 colab pro`** 결제 권장, 정신건강에 좋으려면 colab pro+도 괜찮을 수도.. 근데 50불이라 한국돈 7만원 상당ㅇㄴ, <br>
+"그래도 내는 돈쓰기 싫어서 로컬로 쓸거다" --> 다운로드 엄청 오래걸림ㅋ <br>
+
 
 ### 1. git clone
 ```bash
