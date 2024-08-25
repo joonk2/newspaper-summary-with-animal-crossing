@@ -31,5 +31,6 @@ https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDat
 그리고 app.py가 있는 경로에 들어와 python app.py를 실행하면 뜬다 <br><br>
 
 # 시연영상
-https://github.com/user-attachments/assets/f15bce9a-633d-4efb-984f-df6a65619f06
+소리가 안들린다? --> 음소거 되어있음 <br>
 
+https://github.com/user-attachments/assets/f15bce9a-633d-4efb-984f-df6a65619f06
