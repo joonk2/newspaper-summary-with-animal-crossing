@@ -4,7 +4,7 @@
 ![image](https://github.com/user-attachments/assets/8dde5764-820c-4fe3-a13e-4430fca8a7c5)
 <br><br>
 
-# 사용한 도구
+# 환경 & 도구
 - Colab <br>
 - Python
 - SLLM모델 (kobart)
