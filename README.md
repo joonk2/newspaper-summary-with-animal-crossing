@@ -4,6 +4,14 @@
 ![image](https://github.com/user-attachments/assets/8dde5764-820c-4fe3-a13e-4430fca8a7c5)
 <br><br>
 
+# 사용한 도구
+- Colab <br>
+- Python
+- SLLM모델 (kobart)
+- HTML5
+- Javascript
+
+
 # 사용법
 (아래 사용법 1 ~ 4 를 봐도 잘 안되면 ppt도 참고)
 
