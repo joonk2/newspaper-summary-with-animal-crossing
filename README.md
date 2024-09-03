@@ -5,7 +5,7 @@
 <br><br>
 
 # 환경 & 도구
-- Colab <br>
+- Colab, VScode
 - Python
 - SLLM모델 (kobart)
 - HTML5
