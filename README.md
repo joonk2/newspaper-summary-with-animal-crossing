@@ -32,7 +32,7 @@ https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDat
 
 ### 3. colab을 켜서 kobert_test.ipynb를 불러온다
 아까 다운로드 받은 파일 googledrive에 코드 참고해서 정리하고 모델 학습 후 .pth 저장하자<br>
-필자는 신문기사 데이터 27만개 다 사용했으나 3만개 or 5만개 등등 사용하는건 본인 마음
+필자는 신문기사 데이터 27만개 다 사용했으나 데이터 갯수는 2만개 이상이면 딱히 큰 차이는 없는듯
 
 ### 4. app.py 들어간다
 ※ 음역대 및 속도 조절은 주석을 달아놓았다 원하는대로 변경하면 될 것 같다. <br>
